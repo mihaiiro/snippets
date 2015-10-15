@@ -1,0 +1,15 @@
+# WP PROJECT DEV
+<VirtualHost *:80>   
+	ServerAdmin mihai@wpriders.com
+	DocumentRoot "E:/wamp_server/www/wp_project" 
+	SetEnv APPLICATION_ENV "development"
+	ServerName wp-project.dev
+	ServerAlias *.wp-project.dev
+	ErrorLog "logs/wp-project.dev-error.log"
+	CustomLog "logs/wp-project.dev-access.log" common
+	<Directory "E:/wamp_server/www/wp_project">
+		AllowOverride All
+        Options Indexes FollowSymLinks
+		Require local
+	</Directory>
+</VirtualHost>
