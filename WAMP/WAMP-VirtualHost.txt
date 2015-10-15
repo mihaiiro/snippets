@@ -1,6 +1,6 @@
 # WP PROJECT DEV
 <VirtualHost *:80>   
-	ServerAdmin mihai@wpriders.com
+	ServerAdmin mike@something.com
 	DocumentRoot "E:/wamp_server/www/wp_project" 
 	SetEnv APPLICATION_ENV "development"
 	ServerName wp-project.dev
